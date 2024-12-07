@@ -15,13 +15,13 @@ body {
 
 
 .wrapper {
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(
         to bottom,
-        rgba(255,64,50, 0.4),
-        rgba(171, 17, 116 ,0.3)
+        rgba(255,64,50, 0.7),
+        rgba(171, 17, 116 ,0.5)
     ),
-    url(cool-subtle.jpg) no-repeat center center;
+    url(light-background.jpg) no-repeat center/cover;
 }
 
 /* Header */
@@ -47,4 +47,125 @@ body {
 }
 .header a:hover {
     color: purple;
+}
+
+/* Main Content */
+
+.main-content{
+    display: flex;
+    gap: 50px;
+    max-width: 1100px;
+    margin: 200px auto;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+    padding: 0 40px;
+
+}
+
+.main-content form{
+    flex: 1;
+}
+.main-content .text-container{
+    flex: 1;
+}
+
+/* Form */
+.form-group{
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 0;
+    border-radius: 5px;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    outline: 0;
+
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+
+/* Button */
+.btn {
+    display: block;
+    padding: 15px 20px;
+    border-radius: 20px;
+    width: 100%;
+    border: 0;
+    background-color: rgb(183, 111, 184);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: rgba(183, 111, 184,0.4);
+}
+
+/* Text Container */
+.text-container h1{
+    font-size: 50px;
+    margin: 50px 0 20px;
+    line-height: 1.2;
+
+}
+
+.text-container {
+    font-size: 18px;
+}
+
+/* Media Queries */
+@media (max-width: 768px){
+
+    .header{
+        padding: 30px 10px 0px;
+    }
+    .header,
+    .header .header-right {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main-content {
+        flex-direction: column-reverse;
+        justify-content: start;
+        margin: auto;
+    }
+
+    .main-content form,
+    .main-content .text-container{
+        width: 100%;
+    }
+
+    .main-content h1{
+        font-size: 40px;
+        text-align: center;
+        line-height: 1.2;
+
+    }
+    .main-content p{
+        font-size: 16px;
+    }
+}
+
+@media (max-height: 500px){
+    .main-content {
+        margin: 0 auto;
+    }
 }
