@@ -1,3 +1,5 @@
+/* Main Area Styles */
+
 *{
     padding: 0;
     margin: 0;
@@ -6,8 +8,43 @@
 
 body {
     font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: black;
+    color: white;
+    line-height: 1.6;
 }
 
-.logo {
-    width: 100px;
+
+.wrapper {
+    height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        rgba(255,64,50, 0.4),
+        rgba(171, 17, 116 ,0.3)
+    ),
+    url(cool-subtle.jpg) no-repeat center center;
+}
+
+/* Header */
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+
+
+}
+
+.header .header-right{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.header a{
+    color: white;
+    text-decoration: none;
+}
+.header a:hover {
+    color: purple;
 }

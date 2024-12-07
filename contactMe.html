@@ -13,11 +13,10 @@
     <title>Viv Madigan | Contact Me</title>
 </head>
 <body>
+    <!-- Note to self, when creating a wrapper make sure it contains everything -->
     <div class="wrapper">
-        <header>
-            <a href="contactMe.html">
-                <img class="logo" src="AI Overlord_gif.gif" alt="The AI Overlord">
-            </a>
+        <header class="header" >
+            <a class="header-left" href="contactMe.html">Vivyan Madigan</a>
             <div class="header-right">
                 <div>
                     <i class="fas fa-envelope"></i> vivyanmadigan@gmail.com
@@ -27,34 +26,34 @@
                 </div>
                 <div>
                     <a href="https://www.linkedin.com/in/viv-madigan-543b3a205/">
-                    <i class="fab fa-linkedin"></i> LinkedIn</a>
+                    <i class="fab fa-linkedin"></i> Viv's LinkedIn</a>
                 </div>
             </div>
         </header>
+        <main class="main-content">
+            <form>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">email</label>
+                    <input type="text" name="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+            </form>
+            <div class="text-container">
+                <h1>Contact Vivyan Madigan</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur cumque sunt est necessitatibus esse aut dignissimos, consectetur vitae officiis. Maxime totam placeat quia corporis consequuntur laboriosam numquam sequi illum quisquam.</p>
+            </div>
+        </main>
     </div>
-    <main class="main-content">
-        <form>
-            <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" required>
-            </div>
-            <div class="form-group">
-                <label for="email">email</label>
-                <input type="text" name="email" id="email" required>
-            </div>
-            <div class="form-group">
-                <label for="message">Message</label>
-                <textarea name="message" id="message" required></textarea>
-            </div>
-            <div class="form-group">
-                <button type="submit" class="btn">Submit</button>
-            </div>
-        </form>
-        <div class="text-container">
-            <h1>Contact Vivyan Madigan</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consequatur cumque sunt est necessitatibus esse aut dignissimos, consectetur vitae officiis. Maxime totam placeat quia corporis consequuntur laboriosam numquam sequi illum quisquam.</p>
-        </div>
-    </main>
     
 </body>
 </html>
