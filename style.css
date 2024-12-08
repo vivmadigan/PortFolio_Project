@@ -1,0 +1,165 @@
+/* Main Area Styles */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: -webkit-fill-available; /* Ensures the html element covers the available height */
+}
+
+body {
+    font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: black;
+    color: white;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+ul {
+    list-style: none;
+
+}
+
+.wrapper {
+    min-height: 100vh;
+    background: linear-gradient(
+        to bottom,
+        rgba(52, 15, 218, 0.67),
+        rgba(0, 60, 120, 0.778)
+    ),
+    url(light-background.jpg) no-repeat center/cover;
+}
+
+/* Container */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.container-lg {
+    max-width: 1400px;
+}
+
+.container-sm {
+    max-width: 900px;
+}
+
+.container-tiny {
+    max-width: 500px;
+}
+
+.header-flex{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 25px;
+}
+
+.main-menu{
+    display: flex;
+    gap: 30px;
+    padding: 20px;
+}
+
+.header a{
+    font-size: 20px;
+}
+.header a:hover {
+    color: purple;
+}
+
+.current {
+    font-weight: bold;
+}
+
+@media (max-width:768px){
+    .header .header-flex{
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 30px;
+    }
+    .header-left a{
+        font-size: 20px;
+    }
+    .header a{
+        font-size: 15px;
+    }
+
+    .hero .intro-container{
+        margin: 10px auto;
+        padding: 20px 20px;
+    }
+
+    .hero .intro-container h1{
+        font-size: 45px;
+    }
+
+    .hero .intro-container p {
+        font-size: 20px;
+    }
+}
+
+/* Intro Container */
+
+.intro-container{
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    max-width: 800px;
+    margin: 60px auto;
+    margin-bottom: 20px;
+    height: 100%;
+    padding: 0 20px;
+}
+
+.intro-container h1{
+    font-size: 50px;
+    font-weight: normal;
+}
+
+.intro-container p{
+    font-size: 25px;
+    
+}
+.headshot {
+    height: 300px;
+    border-radius: 50%;
+
+}
+
+/* Footer */
+
+.footer-flex{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: auto;
+    padding: 25px;
+}
+
+
+.contact ul{
+    display: flex;
+    gap: 30px; /* Adds spacing between list items */
+    list-style: none; /* Removes bullet points */
+    margin: 10px;
+    padding: 10px;
+}
