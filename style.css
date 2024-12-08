@@ -111,6 +111,36 @@ ul {
     .hero .intro-container p {
         font-size: 20px;
     }
+
+    .footer-flex {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px; /* Adjust padding as needed */
+        margin: 0 auto; /* Center the footer */
+    }
+
+    .container .footer-flex .contact ul{
+        flex-direction: column; 
+        justify-content: center;
+        gap: 10px;
+    }
+    .contact ul {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center; 
+
+    }
+    .contact li {
+        display: flex;
+        align-items: center; /* Align the icon and text vertically */
+        text-align: center; /* Center-align the text */
+        gap: 10px; /* Add space between the icon and text */
+        font-size: 18px; /* Adjust text size for better readability */
+        width: 100%; /* Ensure it spans the full width */
+        justify-content: center; /* Center items horizontally */
+    }
+
 }
 
 /* Intro Container */
@@ -152,7 +182,7 @@ ul {
     justify-content: flex-end;
     align-items: center;
     margin-top: auto;
-    padding: 25px;
+    padding: 20px;
 }
 
 
@@ -162,4 +192,17 @@ ul {
     list-style: none; /* Removes bullet points */
     margin: 10px;
     padding: 10px;
+}
+
+.contact li {
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+    gap: 10px; /* Space between icon and text */
+}
+
+.footer a{
+    font-size: 20px;
+}
+.footer a:hover {
+    color: purple;
 }
