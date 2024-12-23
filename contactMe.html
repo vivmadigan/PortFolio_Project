@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="contactMeStyle.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,22 +15,16 @@
 <body>
     <!-- Note to self, when creating a wrapper make sure it contains everything -->
     <div class="wrapper">
-        <header class="header" >
-            <a class="header-left" href="index.html">Vivyan Madigan</a>
-            <div class="header-right">
-                <div>
-                    <i class="fas fa-envelope"></i> vivyanmadigan@gmail.com
-                </div>
-                <div>
-                    <i class="fas fa-phone"></i> +46 70-070 82 78
-                </div>
-                <div>
-                    <a href="https://www.linkedin.com/in/viv-madigan-543b3a205/">
-                    <i class="fab fa-linkedin"></i>  LinkedIn</a>
-                </div>
-                <div>
-                    <a href="https://github.com/vivdetta"><i class="fab fa-github"> </i> Github</a>
-                </div>
+        <header class="header">
+            <div class="container header-flex">
+                <nav>
+                    <ul class="main-menu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutMe.html">About Me</a></li>
+                        <li><a href="index.html">Portfolio</a></li>
+                        <li><a class="current" href="contactMe.html">Contact</a></li>
+                    </ul>
+                </nav>
             </div>
         </header>
         <main class="main-content">
@@ -54,9 +48,21 @@
             <div class="text-container">
                 <h1>Contact Viv</h1>
                 <h1></h1>
-                <p>To contact me, please use the messaging feature on this site or refer to the contact information above to reach out through alternative methods.</p>
+                <p>To contact me, please use the messaging feature on this site or refer to the contact information below to reach out through alternative methods.</p>
             </div>
         </main>
+        <footer class="footer">
+            <div class="container footer-flex">
+                <div class="contact">
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> vivyanmadigan@gmail.com</li>
+                        <li><i class="fas fa-phone"></i> +46 70-070 82 78</li>
+                        <li><a href="https://www.linkedin.com/in/viv-madigan-543b3a205/"><i class="fab fa-linkedin"></i>  LinkedIn</a></li>
+                        <a href="https://github.com/vivdetta"><i class="fab fa-github"> </i> Github</a>
+                    </ul>
+                </div>
+            </div>
+        </footer>
     </div>
     
 </body>
