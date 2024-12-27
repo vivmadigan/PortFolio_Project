@@ -286,6 +286,24 @@ ul {
     background: rgba(183, 111, 184, 0.4);
 }
 
+/* FORM Highlight valid/invalid fields */
+.has-error input,
+.has-error textarea {
+  border: 1px solid red;
+}
+
+.has-success input,
+.has-success textarea {
+  border: 1px solid green;
+}
+
+/* Style error messages */
+.form-group .pristine-error {
+  color: red;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
 /* Text Container */
 .text-container h1 {
     font-size: 50px;
